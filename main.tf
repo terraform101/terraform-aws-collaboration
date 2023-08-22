@@ -19,7 +19,8 @@ provider "aws" {
   region = var.region
   default_tags {
     tags = {
-      Project = "<project name>"
+      Project = "Coffe-Mug-Cake"
+      Owner   = "Jerry & Tom"	
     }
   }
 }
