@@ -1,11 +1,11 @@
 terraform {
-   cloud {
-   organization = "blake-test"         # 생성한 ORG 이름 지정
-   hostname     = "app.terraform.io"      # default
+ #  cloud {
+ #  organization = "blake-test"         # 생성한 ORG 이름 지정
+ #  hostname     = "app.terraform.io"      # default
 
-   workspaces {
-     name = "terraform-aws-collaboration" # 없으면 생성됨
-   }
+ #  workspaces {
+ #    name = "terraform-aws-collaboration" # 없으면 생성됨
+ #  }
  }
   required_providers {
     aws = {
@@ -19,8 +19,8 @@ provider "aws" {
   region = var.region
   default_tags {
     tags = {
-      Project = "Coffee-Mug-Cake"
-      Owner = "jerry"
+      Project = "HCP terraform workflow"
+      Owner = "blake"
     }
   }
 }
